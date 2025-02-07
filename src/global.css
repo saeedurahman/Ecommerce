@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --customBlack: #1e1e1e;
+    --customWhite: #ffffff;
+    --customGray: #535f79;
+    --customBlackGray: #21293b;
+    --customLightGray: #333e56;
+    --customGreen: #22a081;
+    --customDarkBlue: #19202e;
+  }
+}
+
+body {
+  background-color: var(--customBlack);
+  color: var(--customWhite);
+}
+
+@layer utilities {
+  .formInput {
+    @apply w-full outline-none border-2 rounded-full bg-transparent px-5 py-[10px] placeholder-customGray text-sm font-semibold;
+  }
+
+  .sidebarTitle {
+    @apply px-[5px] py-[10px] text-[11px] font-medium tracking-[2px] text-aqua;
+  }
+}
+
+.customGreenGradient {
+  background: linear-gradient(106.6deg, #76e2c6 0%, #22a081 99.84%);
+}
+.customGreenGradientShadow {
+  box-shadow: 0px 6px 20px 0px #22a08166;
+}
+
+.sideItem:hover {
+  background: linear-gradient(106.6deg, #76e2c6 0%, #22a081 99.84%);
+  box-shadow: 0px 6px 20px 0px #22a08166;
+}
+
+.sideItem:hover .customIconPathFill path {
+  fill: var(--customWhite);
+}
+
+.activeSideItem {
+  color: var(--customWhite);
+  background: linear-gradient(106.6deg, #76e2c6 0%, #22a081 99.84%);
+  box-shadow: 0px 6px 20px 0px #22a08166;
+}
+.activeSideItem .customIconPathFill path {
+  fill: var(--customWhite);
+}
+
+option {
+  background-color: var(--customLightGray);
+  color: var(--customWhite);
+}
+
+.gJnpNS,
+.rdt_TableHeadRow,
+.rdt_Pagination,
+.rdt_TableCell,
+.rdt_TableCol {
+  background-color: var(--customDarkBlue) !important;
+  color: var(--customWhite) !important;
+}
+
+.rdt_TableHeadRow {
+  border: 0px !important;
+}
+.rdt_TableHeadRow {
+  border: 0px !important;
+}
+
+.rdt_Pagination svg {
+  fill: var(--customWhite) !important;
+}
